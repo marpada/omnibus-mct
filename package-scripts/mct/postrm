@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary mct removal steps
+# after package is uninstalled.
+#
+
+echo "mct has been uninstalled!"
+
+exit 0
