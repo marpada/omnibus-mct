@@ -1,20 +1,23 @@
 
-name 'mct'
-maintainer 'CHANGE ME'
-homepage 'CHANGEME.com'
+name 'omnibus-mct'
+maintainer 'david.pando@gmail.com'
+homepage 'https://github.com/marpada/omnibus-mct'
+description 'Bundles some useful media conversion tools'
 
-replaces        'mct'
+replaces        'omnibus-mct'
 install_path    '/opt/mct'
-build_version   Omnibus::BuildVersion.new.semver
+build_version   '0.9.0'
 build_iteration 1
 
 # creates required build directories
 dependency 'preparation'
 
-# mct dependencies/components
-# dependency 'somedep'
+# ffmpeg dependencies/components
+dependency 'ffmpeg'
+dependency 'yamdi'
 
 # version manifest file
+#dependency 'tests'
 dependency 'version-manifest'
 
 exclude '\.git*'
