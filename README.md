@@ -1,7 +1,14 @@
 mct Omnibus project
 ===================
-This project creates full-stack platform-specific packages for
-`mct`!
+
+omnibus-mct (media conversion tools) includes several multimedia conversion tools and libraries, such as:
+
+* [ffmpeg](http://www.ffmpeg.org)
+* qt-faststart
+* [yamdi](http://yamdi.sourceforge.net)
+* [lame](http://lame.sourceforge.net)
+* [x264](http://www.videolan.org/developers/x264.html)
+* Codecs: [x264](http://www.videolan.org/developers/x264.html), [vpx](http://www.webmproject.org), [faac](http://www.audiocoding.com/faac.html), [ogg](http://xiph.org/ogg),[theora](http://www.theora.org), [opencore-amr](http://sourceforge.net/projects/opencore-amr)
 
 Installation
 ------------
@@ -19,7 +26,7 @@ Usage
 You create a platform-specific package using the `build project` command:
 
 ```shell
-$ bin/omnibus build project mct
+$ bin/omnibus build project omnibus-mct
 ```
 
 The platform/architecture type of the package created will match the platform
@@ -87,7 +94,7 @@ $ bundle exec kitchen login ubuntu-12.04
 [vagrant@ubuntu...] $ cd mct
 [vagrant@ubuntu...] $ bundle install
 [vagrant@ubuntu...] $ ...
-[vagrant@ubuntu...] $ ./bin/omnibus build project mct
+[vagrant@ubuntu...] $ ./bin/omnibus build project omnibus-mct
 ```
 
 For a complete list of all commands and platforms, run `kitchen list` or
